@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration - Friendship Zone</title>
+</head>
+<body>
+    <header>
+        <h1>Registration</h1>
+    </header>
+    <nav>
+        <img src="https://th.bing.com/th/id/OIP.0VB1nDU9TkZW8gJFRW2itQHaE8?pid=ImgDet&rs=1">
+        <ul>
+            <li><a href="home.html">Back to Homepage</a></li>
+        </ul>
+    </nav>
+    <section>
+        <form action="user-confirmation.html" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required pattern="[A-Za-z]{3,}">
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="18" required>
+            <br>
+            <!-- Other form fields -->
+            <br>
+            <button type="submit">Register</button>
+        </form>
+        <form action="admin-confirmation.html" method="POST">
+            <!-- Admin registration fields -->
+            <br>
+            <button type="submit">Register as Admin</button>
+        </form>
+    </section>
+</body>
+</html>
